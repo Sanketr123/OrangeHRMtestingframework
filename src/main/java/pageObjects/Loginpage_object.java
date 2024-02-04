@@ -5,7 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Loginpage_object{
+import testBase.Reusable;
+
+public class Loginpage_object extends Reusable{
 	
 	@FindBy(name="username")
 	WebElement username;
@@ -13,7 +15,7 @@ public class Loginpage_object{
 	@FindBy(name="password")
 	WebElement password;
 	
-	@FindBy(id="oxd-button oxd-button--medium oxd-button--main orangehrm-login-button")
+	@FindBy(xpath = "//button[@type='submit']")
 	WebElement loginbutton;
 	
 	public Loginpage_object(WebDriver driver) {
@@ -22,22 +24,22 @@ public class Loginpage_object{
 	}
 	
 	
-	public void login(String user, String pass) {
-		
-		username.sendKeys(user);
-		
-		password.sendKeys(pass);
-		
-		loginbutton.click();
-		
-	}
+//	public void login(String user, String pass) {
+//		
+//		username.sendKeys(user);
+//		
+//		password.sendKeys(pass);
+//		
+//		loginbutton.click();
+//		
+//	}
 		
 	public void enterUsername(String user) {
         username.sendKeys(user);
     }
 	
 	public void enterpass(String pass) {
-        username.sendKeys(pass);
+		password.sendKeys(pass);
     }
 	
 
