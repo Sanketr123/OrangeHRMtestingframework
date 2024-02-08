@@ -1,5 +1,6 @@
 package testBase;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -14,13 +15,15 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Reusable {
 
-	protected WebDriver driver;
+	protected static WebDriver driver;
 	
-	//WebDriver driver=null;
+	static WebDriverWait wait;
+
+	
 	
 	@BeforeTest
 	 @Parameters("browser")
-	public void openbrowser(String browser) throws InterruptedException {
+	public static void openbrowser(String browser) throws InterruptedException {
 		
 		
 		 
@@ -28,21 +31,24 @@ public class Reusable {
 		
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
-		//driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		
+		
 		}
 		else if(browser.equalsIgnoreCase("Edge")) {  //same like z.equals from Excel_Data2 just we are ignoring cases
 			
 			WebDriverManager.edgedriver().setup();
 
-			//System.setProperty(" ", " ");
 			driver = new EdgeDriver();
 		}
 		
 
 		  driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		  
-		    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		  
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    
+		    
 		
 	}
 	

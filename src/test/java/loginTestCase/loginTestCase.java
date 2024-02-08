@@ -1,36 +1,44 @@
 package loginTestCase;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import pageObjects.AdminPage_object;
 import pageObjects.Loginpage_object;
 import testBase.Reusable;
 
 public class loginTestCase extends Reusable{
-	
-	//WebDriver driver;
 
 
-	@Test
-	public void login() throws InterruptedException {
+	@Test(priority = 1, groups = "group1")
+	public static void login() throws InterruptedException {
+			
 		
-		 openbrowser("Chrome"); 
+		openbrowser("Chrome");
 		
 		Loginpage_object login=new Loginpage_object(driver);
 		
 		login.enterUsername("Admin");
 		
 		login.enterpass("admin123");
+		
+		login.login();
 	
-		//Reusable re = new Reusable();
-		//re.openbrowser("Chrome");
-//		Loginpage_object loginpage_object = new Loginpage_object(driver);
-//		loginpage_object.login("Admin", "admin123");
 		
 		String title=driver.getTitle();
 		System.out.println(title);
 		
-		 //closebrowser();
+		 Assert.assertTrue(title.contains("OrangeHRM"), "Title does not contain expected text");
+		 
+		// login.openadmin();
+		 
+		 Thread.sleep(5000);
+		 
+		 
+		
+
 	}
 	
 }

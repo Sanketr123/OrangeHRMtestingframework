@@ -3,8 +3,14 @@
 <suite name="Suite">
   <test thread-count="5" name="loginTestCase">
 	  <parameter name="browser" value="Chrome"/> 
+	  <groups>
+            <run>
+                <include name="group1"/>
+            </run>
+        </groups>
 	   <classes>
             <class name="loginTestCase.loginTestCase"/>
+            <class name="loginTestCase.adminTestCase"/>
         </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

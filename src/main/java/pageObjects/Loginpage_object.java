@@ -9,6 +9,10 @@ import testBase.Reusable;
 
 public class Loginpage_object extends Reusable{
 	
+
+//	@FindBy(xpath = "(//span[@class='oxd-text oxd-text--span oxd-main-menu-item--name'])[1]")
+//	WebElement adminButton;
+	
 	@FindBy(name="username")
 	WebElement username;
 	
@@ -24,15 +28,6 @@ public class Loginpage_object extends Reusable{
 	}
 	
 	
-//	public void login(String user, String pass) {
-//		
-//		username.sendKeys(user);
-//		
-//		password.sendKeys(pass);
-//		
-//		loginbutton.click();
-//		
-//	}
 		
 	public void enterUsername(String user) {
         username.sendKeys(user);
@@ -41,6 +36,16 @@ public class Loginpage_object extends Reusable{
 	public void enterpass(String pass) {
 		password.sendKeys(pass);
     }
+	
+	public void login() {
+		loginbutton.click();
+    }
+	
+//	public void openadmin() {
+//
+//		adminButton.click();
+//
+//	}
 	
 
 }

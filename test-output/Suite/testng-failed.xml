@@ -3,14 +3,17 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="loginTestCase(failed)">
     <parameter name="browser" value="Chrome"/>
+    <groups>
+      <run>
+        <include name="group1"/>
+      </run>
+    </groups>
     <classes>
-      <class name="loginTestCase.loginTestCase">
+      <class name="loginTestCase.adminTestCase">
         <methods>
-          <include name="openbrowser"/>
-          <include name="closebrowser"/>
-          <include name="login"/>
+          <include name="adminPage"/>
         </methods>
-      </class> <!-- loginTestCase.loginTestCase -->
+      </class> <!-- loginTestCase.adminTestCase -->
     </classes>
   </test> <!-- loginTestCase(failed) -->
 </suite> <!-- Failed suite [Suite] -->
