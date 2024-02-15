@@ -11,18 +11,17 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
+import com.beust.jcommander.Parameter;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Reusable {
 
 	protected static WebDriver driver;
 	
-	static WebDriverWait wait;
+	protected static WebDriverWait wait;
 
-	
-	
-	@BeforeTest
-	 @Parameters("browser")
+
 	public static void openbrowser(String browser) throws InterruptedException {
 		
 		
@@ -44,6 +43,7 @@ public class Reusable {
 
 		  driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		  
+		 
 	        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		  
 		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -53,13 +53,20 @@ public class Reusable {
 	}
 	
 	
-	@AfterTest 
-		
-    public void closebrowser() throws InterruptedException {
+	
+    public static void closebrowser() throws InterruptedException {
 		driver.close();
-		Thread.sleep(4000);
-
-	
-	
+		
 }
+    
+    @BeforeTest
+  @Parameters("browser")
+  public void setup(String browser) throws InterruptedException {
+      openbrowser(browser);
+  }
+
+  @AfterTest
+  public void teardown() throws InterruptedException {
+      closebrowser();
+  }
 }

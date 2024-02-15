@@ -2,40 +2,70 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-08T22:49:06 IST" name="Suite" finished-at="2024-02-08T22:49:20 IST" duration-ms="14411">
+  <suite started-at="2024-02-16T00:37:17 IST" name="Suite" finished-at="2024-02-16T00:37:32 IST" duration-ms="14932">
     <groups>
-      <group name="group1">
-        <method signature="loginTestCase.login()[pri:1, instance:loginTestCase.loginTestCase@1fa121e2]" name="login" class="loginTestCase.loginTestCase"/>
-        <method signature="adminTestCase.adminPage()[pri:2, instance:loginTestCase.adminTestCase@7c6908d7]" name="adminPage" class="loginTestCase.adminTestCase"/>
-      </group> <!-- group1 -->
     </groups>
-    <test started-at="2024-02-08T22:49:06 IST" name="loginTestCase" finished-at="2024-02-08T22:49:20 IST" duration-ms="14411">
+    <test started-at="2024-02-16T00:37:17 IST" name="loginTestCase" finished-at="2024-02-16T00:37:23 IST" duration-ms="5974">
+      <class name="loginTestCase.loginTestCase">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:loginTestCase.loginTestCase@367ffa75]" started-at="2024-02-16T00:37:17 IST" name="setup" finished-at="2024-02-16T00:37:21 IST" duration-ms="4130" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="login()[pri:0, instance:loginTestCase.loginTestCase@367ffa75]" started-at="2024-02-16T00:37:21 IST" name="login" finished-at="2024-02-16T00:37:23 IST" duration-ms="1697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:loginTestCase.loginTestCase@367ffa75]" started-at="2024-02-16T00:37:23 IST" name="teardown" finished-at="2024-02-16T00:37:23 IST" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- loginTestCase.loginTestCase -->
+    </test> <!-- loginTestCase -->
+    <test started-at="2024-02-16T00:37:23 IST" name="adminTestCase" finished-at="2024-02-16T00:37:32 IST" duration-ms="8928">
       <class name="loginTestCase.adminTestCase">
-        <test-method signature="adminPage()[pri:2, instance:loginTestCase.adminTestCase@7c6908d7]" started-at="2024-02-08T22:49:20 IST" name="adminPage" finished-at="2024-02-08T22:49:20 IST" duration-ms="47" status="FAIL">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:loginTestCase.adminTestCase@5fbe4146]" started-at="2024-02-16T00:37:23 IST" name="setup" finished-at="2024-02-16T00:37:27 IST" duration-ms="4031" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="adminPage()[pri:0, instance:loginTestCase.adminTestCase@5fbe4146]" started-at="2024-02-16T00:37:27 IST" name="adminPage" finished-at="2024-02-16T00:37:32 IST" duration-ms="4793" status="FAIL">
           <exception class="org.openqa.selenium.InvalidSelectorException">
             <message>
               <![CDATA[invalid selector: Unable to locate an element with the xpath expression //span[@class='oxd-text oxd-text--span oxd-main-menu-item--name'])[1] because of the following error:
 SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//span[@class='oxd-text oxd-text--span oxd-main-menu-item--name'])[1]' is not a valid XPath expression.
-  (Session info: chrome=121.0.6167.140)
+  (Session info: chrome=121.0.6167.184)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
 Build info: version: '4.17.0', revision: 'e52b1be057*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [35ee24513a2203078eb07e50824db9db, findElement {using=xpath, value=//span[@class='oxd-text oxd-text--span oxd-main-menu-item--name'])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\Sanket Raut\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58222}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58222/devtoo..., se:cdpVersion: 121.0.6167.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 35ee24513a2203078eb07e50824db9db]]>
+Command: [f646d41e438003064176e728aba13506, findElement {value=//span[@class='oxd-text oxd-text--span oxd-main-menu-item--name'])[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.184, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\Sanket Raut\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62655}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62655/devtoo..., se:cdpVersion: 121.0.6167.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f646d41e438003064176e728aba13506]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //span[@class='oxd-text oxd-text--span oxd-main-menu-item--name'])[1] because of the following error:
 SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//span[@class='oxd-text oxd-text--span oxd-main-menu-item--name'])[1]' is not a valid XPath expression.
-  (Session info: chrome=121.0.6167.140)
+  (Session info: chrome=121.0.6167.184)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
 Build info: version: '4.17.0', revision: 'e52b1be057*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [35ee24513a2203078eb07e50824db9db, findElement {using=xpath, value=//span[@class='oxd-text oxd-text--span oxd-main-menu-item--name'])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\Sanket Raut\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58222}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58222/devtoo..., se:cdpVersion: 121.0.6167.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 35ee24513a2203078eb07e50824db9db
+Command: [f646d41e438003064176e728aba13506, findElement {value=//span[@class='oxd-text oxd-text--span oxd-main-menu-item--name'])[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.184, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\Sanket Raut\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62655}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62655/devtoo..., se:cdpVersion: 121.0.6167.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f646d41e438003064176e728aba13506
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -54,7 +84,7 @@ at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(Def
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
 at pageObjects.AdminPage_object.openadmin(AdminPage_object.java:32)
-at loginTestCase.adminTestCase.adminPage(adminTestCase.java:16)
+at loginTestCase.adminTestCase.adminPage(adminTestCase.java:32)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -87,13 +117,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- adminPage -->
-      </class> <!-- loginTestCase.adminTestCase -->
-      <class name="loginTestCase.loginTestCase">
-        <test-method signature="login()[pri:1, instance:loginTestCase.loginTestCase@1fa121e2]" started-at="2024-02-08T22:49:06 IST" name="login" finished-at="2024-02-08T22:49:20 IST" duration-ms="14312" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:loginTestCase.adminTestCase@5fbe4146]" started-at="2024-02-16T00:37:32 IST" name="teardown" finished-at="2024-02-16T00:37:32 IST" duration-ms="97" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-      </class> <!-- loginTestCase.loginTestCase -->
-    </test> <!-- loginTestCase -->
+        </test-method> <!-- teardown -->
+      </class> <!-- loginTestCase.adminTestCase -->
+    </test> <!-- adminTestCase -->
   </suite> <!-- Suite -->
 </testng-results>

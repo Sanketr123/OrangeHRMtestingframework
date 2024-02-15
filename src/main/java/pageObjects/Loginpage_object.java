@@ -23,7 +23,6 @@ public class Loginpage_object extends Reusable{
 	WebElement loginbutton;
 	
 	public Loginpage_object(WebDriver driver) {
-		
 		PageFactory.initElements(driver, this);
 	}
 	
