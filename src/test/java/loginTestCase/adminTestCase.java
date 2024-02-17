@@ -31,7 +31,22 @@ public class adminTestCase extends Reusable {
 
 		admin.openadmin();
 		
-	
+		admin.clickonaddadmin();
+		
+		Thread.sleep(3000);
+		
+		admin.clickonuserrole();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
 	}
 
