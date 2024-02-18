@@ -1,6 +1,7 @@
 package pageObjects;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -23,7 +24,7 @@ public class AdminPage_object extends Reusable {
 	@FindBy(xpath = "(//div[@class='oxd-select-text oxd-select-text--active'])[1]")
 	WebElement userrole;
 	
-	@FindBy(xpath = "(//div[@class='oxd-select-text oxd-select-text--active'])[1]")
+	@FindBy(xpath = "//div[text()='Admin']")  //  oxd-select-dropdown --position-bottom
 	WebElement selectuserrole;
 	
 
@@ -52,10 +53,13 @@ public class AdminPage_object extends Reusable {
 	
 	public void selectuserrole() {
 
-		 Select dropdown = new Select(selectuserrole);
+//		 Select dropdown = new Select(selectuserrole);
+//		 
+//		 dropdown.selectByVisibleText("Admin");
 		 
-		 dropdown.selectByVisibleText("Admin");
-
+		// ((JavascriptExecutor) driver).executeScript("arguments[0].value='Admin';", selectuserrole);
+		selectuserrole.sendKeys("A");
+		
 	}
 
 }

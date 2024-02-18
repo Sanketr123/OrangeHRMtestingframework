@@ -36,17 +36,14 @@ public class adminTestCase extends Reusable {
 		Thread.sleep(3000);
 		
 		admin.clickonuserrole();
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		Thread.sleep(3000);
+//
+//		admin.selectuserrole();
+//		Thread.sleep(3000);
+//		
+//		admin.clickonuserrole();
+//		Thread.sleep(3000);
+
 
 	}
 
