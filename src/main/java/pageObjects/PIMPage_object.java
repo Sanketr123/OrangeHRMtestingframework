@@ -12,10 +12,10 @@ public class PIMPage_object extends Reusable{
 	@FindBy(xpath = "(//li[@class='oxd-main-menu-item-wrapper'])[2]")  //  oxd-select-dropdown --position-bottom
 	WebElement clickonPIM;
 	
-	@FindBy(xpath = "(//div[@class='oxd-autocomplete-wrapper'])[1]")  //  oxd-select-dropdown --position-bottom
+	@FindBy(xpath = "(//input[@placeholder='Type for hints...'])[1]")  //  oxd-select-dropdown --position-bottom   //(//div[@class='oxd-autocomplete-text-input oxd-autocomplete-text-input--active'])[1]
 	WebElement Empname;
 	
-	@FindBy(xpath = "((//input[@class='oxd-input oxd-input--active'])[2]")  //  oxd-select-dropdown --position-bottom
+	@FindBy(xpath = "(//input[@class='oxd-input oxd-input--active'])[2]")  //  oxd-select-dropdown --position-bottom
 	WebElement Empid;
 	
 	@FindBy(xpath = "//button[@type='submit']")  //  oxd-select-dropdown --position-bottom
@@ -45,7 +45,14 @@ public class PIMPage_object extends Reusable{
 	
 	public void EnterEmpId() {
 
-		Empname.sendKeys("12345");
+		Empid.sendKeys("12345");
+		
+
+	}
+	
+	public void sublitbutton() {
+
+		submitbutton.click();
 		
 
 	}

@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class PIMDetails_object {
 	
-	@FindBy(xpath = "(//div[@class='oxd-select-text oxd-select-text--active' ])[1]")  //  oxd-select-dropdown --position-bottom
+	@FindBy(xpath = "(//div[@class='oxd-select-text-input' ])[1]")  //  oxd-select-dropdown --position-bottom
 	WebElement editbutton;
 	
 
@@ -16,12 +16,16 @@ public class PIMDetails_object {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void EnterNationality() {
+	public void EnterNationality() throws InterruptedException {
 
 		editbutton.sendKeys("J");
+		Thread.sleep(4000);
 		editbutton.click();
+		
 
 	}
+	
+	
 	
 
 }

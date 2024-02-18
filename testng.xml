@@ -17,7 +17,7 @@
   </test> <!-- Test -->
   
   
-  <test thread-count="5" name="adminTestCase">   
+  <test thread-count="5" name="pimTestCase">   
     <parameter name="browser" value="Chrome"/>  
     <classes>
       <class name="loginTestCase.pimTestCase"/>
