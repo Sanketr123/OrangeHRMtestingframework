@@ -1,5 +1,6 @@
 package pageObjects;
 
+import java.util.Iterator;
 import java.util.Set;
 
 import org.openqa.selenium.WebDriver;
@@ -31,8 +32,20 @@ public class HelpPage_object {
 		
 		Set<String> windowid = driver.getWindowHandles();
 		
-		System.out.print(windowid);
-		Thread.sleep(3000);
+		System.out.println(windowid);
+		Thread.sleep(4000);
+		
+		Iterator<String> it = windowid.iterator();
+		
+		String parentid=it.next();
+		
+		String childid=it.next();
+		
+		driver.switchTo().window(childid);
+		
+		String childTitle=driver.getTitle();
+		System.out.println(childTitle);
+		
 	}
 
 

@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-19T23:19:34 IST" name="Suite" finished-at="2024-02-19T23:20:53 IST" duration-ms="79465">
+  <suite started-at="2024-02-19T23:44:02 IST" name="Suite" finished-at="2024-02-19T23:45:30 IST" duration-ms="88008">
     <groups>
     </groups>
-    <test started-at="2024-02-19T23:19:34 IST" name="loginTestCase" finished-at="2024-02-19T23:19:40 IST" duration-ms="6663">
+    <test started-at="2024-02-19T23:44:02 IST" name="loginTestCase" finished-at="2024-02-19T23:44:10 IST" duration-ms="8123">
       <class name="loginTestCase.loginTestCase">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:loginTestCase.loginTestCase@367ffa75]" started-at="2024-02-19T23:19:34 IST" name="setup" finished-at="2024-02-19T23:19:39 IST" duration-ms="4814" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:loginTestCase.loginTestCase@367ffa75]" started-at="2024-02-19T23:44:02 IST" name="setup" finished-at="2024-02-19T23:44:08 IST" duration-ms="5941" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,19 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login()[pri:0, instance:loginTestCase.loginTestCase@367ffa75]" started-at="2024-02-19T23:19:39 IST" name="login" finished-at="2024-02-19T23:19:40 IST" duration-ms="1710" status="PASS">
+        <test-method signature="login()[pri:0, instance:loginTestCase.loginTestCase@367ffa75]" started-at="2024-02-19T23:44:08 IST" name="login" finished-at="2024-02-19T23:44:10 IST" duration-ms="2040" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:loginTestCase.loginTestCase@367ffa75]" started-at="2024-02-19T23:19:40 IST" name="teardown" finished-at="2024-02-19T23:19:40 IST" duration-ms="107" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:loginTestCase.loginTestCase@367ffa75]" started-at="2024-02-19T23:44:10 IST" name="teardown" finished-at="2024-02-19T23:44:10 IST" duration-ms="108" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- loginTestCase.loginTestCase -->
     </test> <!-- loginTestCase -->
-    <test started-at="2024-02-19T23:19:41 IST" name="adminTestCase" finished-at="2024-02-19T23:19:56 IST" duration-ms="15964">
+    <test started-at="2024-02-19T23:44:10 IST" name="adminTestCase" finished-at="2024-02-19T23:44:29 IST" duration-ms="18824">
       <class name="loginTestCase.adminTestCase">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:loginTestCase.adminTestCase@5fbe4146]" started-at="2024-02-19T23:19:41 IST" name="setup" finished-at="2024-02-19T23:19:44 IST" duration-ms="3388" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:loginTestCase.adminTestCase@5fbe4146]" started-at="2024-02-19T23:44:10 IST" name="setup" finished-at="2024-02-19T23:44:15 IST" duration-ms="4840" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,19 +41,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="adminPage()[pri:0, instance:loginTestCase.adminTestCase@5fbe4146]" started-at="2024-02-19T23:19:44 IST" name="adminPage" finished-at="2024-02-19T23:19:56 IST" duration-ms="12417" status="PASS">
+        <test-method signature="adminPage()[pri:0, instance:loginTestCase.adminTestCase@5fbe4146]" started-at="2024-02-19T23:44:15 IST" name="adminPage" finished-at="2024-02-19T23:44:29 IST" duration-ms="13820" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- adminPage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:loginTestCase.adminTestCase@5fbe4146]" started-at="2024-02-19T23:19:56 IST" name="teardown" finished-at="2024-02-19T23:19:56 IST" duration-ms="152" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:loginTestCase.adminTestCase@5fbe4146]" started-at="2024-02-19T23:44:29 IST" name="teardown" finished-at="2024-02-19T23:44:29 IST" duration-ms="153" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- loginTestCase.adminTestCase -->
     </test> <!-- adminTestCase -->
-    <test started-at="2024-02-19T23:19:56 IST" name="pimTestCase" finished-at="2024-02-19T23:20:39 IST" duration-ms="42439">
+    <test started-at="2024-02-19T23:44:29 IST" name="pimTestCase" finished-at="2024-02-19T23:45:07 IST" duration-ms="38465">
       <class name="loginTestCase.pimTestCase">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:loginTestCase.pimTestCase@71e9ddb4]" started-at="2024-02-19T23:19:56 IST" name="setup" finished-at="2024-02-19T23:20:02 IST" duration-ms="5440" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:loginTestCase.pimTestCase@71e9ddb4]" started-at="2024-02-19T23:44:29 IST" name="setup" finished-at="2024-02-19T23:44:33 IST" duration-ms="3774" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -64,23 +64,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="pimpage()[pri:1, instance:loginTestCase.pimTestCase@71e9ddb4]" started-at="2024-02-19T23:20:02 IST" name="pimpage" finished-at="2024-02-19T23:20:23 IST" duration-ms="21532" status="PASS">
+        <test-method signature="pimpage()[pri:1, instance:loginTestCase.pimTestCase@71e9ddb4]" started-at="2024-02-19T23:44:33 IST" name="pimpage" finished-at="2024-02-19T23:44:52 IST" duration-ms="19241" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pimpage -->
-        <test-method signature="pimDetails()[pri:2, instance:loginTestCase.pimTestCase@71e9ddb4]" started-at="2024-02-19T23:20:23 IST" name="pimDetails" finished-at="2024-02-19T23:20:39 IST" duration-ms="15346" status="PASS">
+        <test-method signature="pimDetails()[pri:2, instance:loginTestCase.pimTestCase@71e9ddb4]" started-at="2024-02-19T23:44:52 IST" name="pimDetails" finished-at="2024-02-19T23:45:07 IST" duration-ms="15342" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pimDetails -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:loginTestCase.pimTestCase@71e9ddb4]" started-at="2024-02-19T23:20:39 IST" name="teardown" finished-at="2024-02-19T23:20:39 IST" duration-ms="106" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:loginTestCase.pimTestCase@71e9ddb4]" started-at="2024-02-19T23:45:07 IST" name="teardown" finished-at="2024-02-19T23:45:07 IST" duration-ms="94" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- loginTestCase.pimTestCase -->
     </test> <!-- pimTestCase -->
-    <test started-at="2024-02-19T23:20:39 IST" name="helpPageTestCase" finished-at="2024-02-19T23:20:53 IST" duration-ms="14348">
+    <test started-at="2024-02-19T23:45:07 IST" name="helpPageTestCase" finished-at="2024-02-19T23:45:30 IST" duration-ms="22545">
       <class name="loginTestCase.helpPageTestCase">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:loginTestCase.helpPageTestCase@1190200a]" started-at="2024-02-19T23:20:39 IST" name="setup" finished-at="2024-02-19T23:20:44 IST" duration-ms="4788" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:loginTestCase.helpPageTestCase@1190200a]" started-at="2024-02-19T23:45:07 IST" name="setup" finished-at="2024-02-19T23:45:12 IST" duration-ms="4850" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -91,11 +91,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="windowoperation()[pri:0, instance:loginTestCase.helpPageTestCase@1190200a]" started-at="2024-02-19T23:20:44 IST" name="windowoperation" finished-at="2024-02-19T23:20:53 IST" duration-ms="9475" status="PASS">
+        <test-method signature="windowoperation()[pri:0, instance:loginTestCase.helpPageTestCase@1190200a]" started-at="2024-02-19T23:45:12 IST" name="windowoperation" finished-at="2024-02-19T23:45:30 IST" duration-ms="17626" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- windowoperation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:loginTestCase.helpPageTestCase@1190200a]" started-at="2024-02-19T23:20:53 IST" name="teardown" finished-at="2024-02-19T23:20:53 IST" duration-ms="80" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:loginTestCase.helpPageTestCase@1190200a]" started-at="2024-02-19T23:45:30 IST" name="teardown" finished-at="2024-02-19T23:45:30 IST" duration-ms="65" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
