@@ -24,4 +24,12 @@
     </classes>
   </test> <!-- Test -->
   
+  
+   <test thread-count="5" name="helpPageTestCase">   
+    <parameter name="browser" value="Chrome"/>  
+    <classes>
+      <class name="loginTestCase.helpPageTestCase"/>
+    </classes>
+  </test> <!-- Test -->
+  
 </suite> <!-- Suite -->

@@ -55,7 +55,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">3 tests</span>
+                    <span class="test-stats">4 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -119,6 +119,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="loginTestCase.pimTestCase" class="method navigator-link" hash-for-method="pimpage">pimpage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="loginTestCase.helpPageTestCase" class="method navigator-link" hash-for-method="windowoperation">windowoperation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -173,6 +178,21 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">loginTestCase.helpPageTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="windowoperation">
+                  </a> <!-- windowoperation -->
+                  <span class="method-name">windowoperation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">loginTestCase.adminTestCase</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -213,6 +233,12 @@
       &lt;class name=&quot;loginTestCase.pimTestCase&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- pimTestCase --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;helpPageTestCase&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;loginTestCase.helpPageTestCase&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- helpPageTestCase --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -231,6 +257,9 @@
               </li>
               <li>
                 <span class="test-name">pimTestCase (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">helpPageTestCase (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -256,28 +285,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'pimpage')
 data.setCell(0, 2, 'loginTestCase.pimTestCase')
-data.setCell(0, 3, 18350);
+data.setCell(0, 3, 21532);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'adminPage')
-data.setCell(1, 2, 'loginTestCase.adminTestCase')
-data.setCell(1, 3, 12883);
+data.setCell(1, 1, 'pimDetails')
+data.setCell(1, 2, 'loginTestCase.pimTestCase')
+data.setCell(1, 3, 15346);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'pimDetails')
-data.setCell(2, 2, 'loginTestCase.pimTestCase')
-data.setCell(2, 3, 7186);
+data.setCell(2, 1, 'adminPage')
+data.setCell(2, 2, 'loginTestCase.adminTestCase')
+data.setCell(2, 3, 12417);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'login')
-data.setCell(3, 2, 'loginTestCase.loginTestCase')
-data.setCell(3, 3, 1990);
+data.setCell(3, 1, 'windowoperation')
+data.setCell(3, 2, 'loginTestCase.helpPageTestCase')
+data.setCell(3, 3, 9475);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'login')
+data.setCell(4, 2, 'loginTestCase.loginTestCase')
+data.setCell(4, 3, 1710);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 40 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -310,45 +343,60 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">4446 ms</span>
+                <span class="method-start">4831 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">6440 ms</span>
+                <span class="method-start">6547 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">loginTestCase.adminTestCase</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup(Chrome)</span>
-                <span class="method-start">6557 ms</span>
+                <span class="method-start">6690 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">adminPage</span>
-                <span class="method-start">9747 ms</span>
+                <span class="method-start">10079 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">22632 ms</span>
+                <span class="method-start">22500 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">loginTestCase.pimTestCase</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup(Chrome)</span>
-                <span class="method-start">22759 ms</span>
+                <span class="method-start">22661 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">pimpage</span>
-                <span class="method-start">25798 ms</span>
+                <span class="method-start">28103 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">pimDetails</span>
-                <span class="method-start">44152 ms</span>
+                <span class="method-start">49641 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">51341 ms</span>
+                <span class="method-start">64993 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">loginTestCase.helpPageTestCase</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup(Chrome)</span>
+                <span class="method-start">65110 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">windowoperation</span>
+                <span class="method-start">69899 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">79376 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

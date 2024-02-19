@@ -52,6 +52,16 @@ public class pimTestCase extends Reusable {
 		PIMdetails.EnterNationality();
 		
 		Thread.sleep(3000);
+		
+		PIMdetails.selectGender();
+		
+		Thread.sleep(3000);
+		
+		PIMdetails.addFile();
+		
+		Thread.sleep(5000);
+
+		
 
 	}
 
