@@ -20,8 +20,8 @@ public class HelpPage_object {
 	@FindBy(xpath = "//div[@class='article-relatives']")
 	WebElement footersection;
 	
-	@FindBy(xpath = "(//button[@class='oxd-icon-button'])[1]")
-	WebElement helpButton;
+	// @FindBy(xpath = "(//button[@class='oxd-icon-button'])[1]")
+	// WebElement helpButton;
 
 	public HelpPage_object(WebDriver driver) {
 		PageFactory.initElements(driver, this);
