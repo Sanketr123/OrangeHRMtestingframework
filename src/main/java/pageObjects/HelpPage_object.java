@@ -1,9 +1,11 @@
 package pageObjects;
 
 import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -55,19 +57,54 @@ public class HelpPage_object {
 		
 		//WebElement footerlink= driver.findElement(By.xpath(" "));
 		
-		//System.out.println(driver.findElement(By.xpath("//div[@class='article-relatives'] //a"))); //links in footer 10
+//		WebElement footerlink=(driver.findElement(By.xpath("//div[@class='article-relatives'] //a")));
+//		System.out.println(footerlink);//links in footer 5   //check launchbrowser class
 
-		WebElement footerlink=driver.findElement(By.xpath("//div[@class='article-relatives'] //a"));
-
-		for(int i=1;i<footerlink;i++){
+//		WebElement footerlink=driver.findElement(By.xpath("//div[@class='article-relatives'] //a"));
+//
+//		for(int i=1;i<footerlink;i++){
+//		
+//			
+//
+//		}
+//		
 		
+//	List <WebElement> footer = (driver.findElements(By.xpath("//div[@class='article-relatives'] //a")));
+//		
+//		int foo=footer.size();
+//		
+//		System.out.println(foo);
+//		
+//		 Iterator<WebElement> iterator = footer.iterator();
+//	        while (iterator.hasNext()) {
+//	            WebElement item = iterator.next();
+//	            
+//	            System.out.println(item.getText());
+//	        }
+	        
+		  List<WebElement> footer = (driver.findElements(By.xpath("//div[@class='article-relatives'] //a")));
+	        
+		for(WebElement link : footer) {
 			
-
-		}
+			 link.sendKeys(Keys.CONTROL,Keys.ENTER);
+			 
+			 Set <String> linkhandel=driver.getWindowHandles();
+			 
+			Iterator<String> linkhan= linkhandel.iterator();
+			
+			while(linkhan.hasNext()) {
+				
+				driver.switchTo().window(linkhan.next());
+				
+				System.out.println( driver.getTitle());
+	
+			}
+			 
+	        }
 		
 		//verifyfooter link
 		
-		Thread.sleep(4000);
+		Thread.sleep(6000);
 		driver.switchTo().window(parentid);
 		
 	}

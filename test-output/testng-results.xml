@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-19T23:44:02 IST" name="Suite" finished-at="2024-02-19T23:45:30 IST" duration-ms="88008">
+  <suite started-at="2024-02-21T23:21:34 IST" name="Suite" finished-at="2024-02-21T23:23:08 IST" duration-ms="93587">
     <groups>
     </groups>
-    <test started-at="2024-02-19T23:44:02 IST" name="loginTestCase" finished-at="2024-02-19T23:44:10 IST" duration-ms="8123">
+    <test started-at="2024-02-21T23:21:34 IST" name="loginTestCase" finished-at="2024-02-21T23:21:43 IST" duration-ms="8675">
       <class name="loginTestCase.loginTestCase">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:loginTestCase.loginTestCase@367ffa75]" started-at="2024-02-19T23:44:02 IST" name="setup" finished-at="2024-02-19T23:44:08 IST" duration-ms="5941" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:loginTestCase.loginTestCase@367ffa75]" started-at="2024-02-21T23:21:34 IST" name="setup" finished-at="2024-02-21T23:21:41 IST" duration-ms="6766" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,19 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login()[pri:0, instance:loginTestCase.loginTestCase@367ffa75]" started-at="2024-02-19T23:44:08 IST" name="login" finished-at="2024-02-19T23:44:10 IST" duration-ms="2040" status="PASS">
+        <test-method signature="login()[pri:0, instance:loginTestCase.loginTestCase@367ffa75]" started-at="2024-02-21T23:21:41 IST" name="login" finished-at="2024-02-21T23:21:43 IST" duration-ms="1764" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:loginTestCase.loginTestCase@367ffa75]" started-at="2024-02-19T23:44:10 IST" name="teardown" finished-at="2024-02-19T23:44:10 IST" duration-ms="108" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:loginTestCase.loginTestCase@367ffa75]" started-at="2024-02-21T23:21:43 IST" name="teardown" finished-at="2024-02-21T23:21:43 IST" duration-ms="111" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- loginTestCase.loginTestCase -->
     </test> <!-- loginTestCase -->
-    <test started-at="2024-02-19T23:44:10 IST" name="adminTestCase" finished-at="2024-02-19T23:44:29 IST" duration-ms="18824">
+    <test started-at="2024-02-21T23:21:43 IST" name="adminTestCase" finished-at="2024-02-21T23:22:07 IST" duration-ms="23868">
       <class name="loginTestCase.adminTestCase">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:loginTestCase.adminTestCase@5fbe4146]" started-at="2024-02-19T23:44:10 IST" name="setup" finished-at="2024-02-19T23:44:15 IST" duration-ms="4840" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:loginTestCase.adminTestCase@5fbe4146]" started-at="2024-02-21T23:21:43 IST" name="setup" finished-at="2024-02-21T23:21:53 IST" duration-ms="10380" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,19 +41,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="adminPage()[pri:0, instance:loginTestCase.adminTestCase@5fbe4146]" started-at="2024-02-19T23:44:15 IST" name="adminPage" finished-at="2024-02-19T23:44:29 IST" duration-ms="13820" status="PASS">
+        <test-method signature="adminPage()[pri:0, instance:loginTestCase.adminTestCase@5fbe4146]" started-at="2024-02-21T23:21:53 IST" name="adminPage" finished-at="2024-02-21T23:22:07 IST" duration-ms="13376" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- adminPage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:loginTestCase.adminTestCase@5fbe4146]" started-at="2024-02-19T23:44:29 IST" name="teardown" finished-at="2024-02-19T23:44:29 IST" duration-ms="153" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:loginTestCase.adminTestCase@5fbe4146]" started-at="2024-02-21T23:22:07 IST" name="teardown" finished-at="2024-02-21T23:22:07 IST" duration-ms="105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- loginTestCase.adminTestCase -->
     </test> <!-- adminTestCase -->
-    <test started-at="2024-02-19T23:44:29 IST" name="pimTestCase" finished-at="2024-02-19T23:45:07 IST" duration-ms="38465">
+    <test started-at="2024-02-21T23:22:07 IST" name="pimTestCase" finished-at="2024-02-21T23:22:48 IST" duration-ms="41415">
       <class name="loginTestCase.pimTestCase">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:loginTestCase.pimTestCase@71e9ddb4]" started-at="2024-02-19T23:44:29 IST" name="setup" finished-at="2024-02-19T23:44:33 IST" duration-ms="3774" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:loginTestCase.pimTestCase@71e9ddb4]" started-at="2024-02-21T23:22:07 IST" name="setup" finished-at="2024-02-21T23:22:13 IST" duration-ms="6484" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -64,23 +64,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="pimpage()[pri:1, instance:loginTestCase.pimTestCase@71e9ddb4]" started-at="2024-02-19T23:44:33 IST" name="pimpage" finished-at="2024-02-19T23:44:52 IST" duration-ms="19241" status="PASS">
+        <test-method signature="pimpage()[pri:1, instance:loginTestCase.pimTestCase@71e9ddb4]" started-at="2024-02-21T23:22:13 IST" name="pimpage" finished-at="2024-02-21T23:22:33 IST" duration-ms="19427" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pimpage -->
-        <test-method signature="pimDetails()[pri:2, instance:loginTestCase.pimTestCase@71e9ddb4]" started-at="2024-02-19T23:44:52 IST" name="pimDetails" finished-at="2024-02-19T23:45:07 IST" duration-ms="15342" status="PASS">
+        <test-method signature="pimDetails()[pri:2, instance:loginTestCase.pimTestCase@71e9ddb4]" started-at="2024-02-21T23:22:33 IST" name="pimDetails" finished-at="2024-02-21T23:22:48 IST" duration-ms="15377" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pimDetails -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:loginTestCase.pimTestCase@71e9ddb4]" started-at="2024-02-19T23:45:07 IST" name="teardown" finished-at="2024-02-19T23:45:07 IST" duration-ms="94" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:loginTestCase.pimTestCase@71e9ddb4]" started-at="2024-02-21T23:22:48 IST" name="teardown" finished-at="2024-02-21T23:22:48 IST" duration-ms="116" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- loginTestCase.pimTestCase -->
     </test> <!-- pimTestCase -->
-    <test started-at="2024-02-19T23:45:07 IST" name="helpPageTestCase" finished-at="2024-02-19T23:45:30 IST" duration-ms="22545">
+    <test started-at="2024-02-21T23:22:48 IST" name="helpPageTestCase" finished-at="2024-02-21T23:23:08 IST" duration-ms="19574">
       <class name="loginTestCase.helpPageTestCase">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:loginTestCase.helpPageTestCase@1190200a]" started-at="2024-02-19T23:45:07 IST" name="setup" finished-at="2024-02-19T23:45:12 IST" duration-ms="4850" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:loginTestCase.helpPageTestCase@1190200a]" started-at="2024-02-21T23:22:48 IST" name="setup" finished-at="2024-02-21T23:22:53 IST" duration-ms="4690" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -91,11 +91,78 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="windowoperation()[pri:0, instance:loginTestCase.helpPageTestCase@1190200a]" started-at="2024-02-19T23:45:12 IST" name="windowoperation" finished-at="2024-02-19T23:45:30 IST" duration-ms="17626" status="PASS">
+        <test-method signature="windowoperation()[pri:0, instance:loginTestCase.helpPageTestCase@1190200a]" started-at="2024-02-21T23:22:53 IST" name="windowoperation" finished-at="2024-02-21T23:23:08 IST" duration-ms="14816" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=121.0.6167.185)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [559c45d9f32444dbf349a71cb2cfb0d1, sendKeysToElement {id=6BF60D1C5ACF46B1CF2005AFC0F0618A_element_12, value=[Ljava.lang.CharSequence;@336206d8}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.185, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\Sanket Raut\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57271}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57271/devtoo..., se:cdpVersion: 121.0.6167.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (559c45d9f32444dbf349a71cb2cfb0d1)] -> xpath: //div[@class='article-relatives'] //a]
+Session ID: 559c45d9f32444dbf349a71cb2cfb0d1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=121.0.6167.185)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [559c45d9f32444dbf349a71cb2cfb0d1, sendKeysToElement {id=6BF60D1C5ACF46B1CF2005AFC0F0618A_element_12, value=[Ljava.lang.CharSequence;@336206d8}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.185, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\Sanket Raut\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57271}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57271/devtoo..., se:cdpVersion: 121.0.6167.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (559c45d9f32444dbf349a71cb2cfb0d1)] -> xpath: //div[@class='article-relatives'] //a]
+Session ID: 559c45d9f32444dbf349a71cb2cfb0d1
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+at pageObjects.HelpPage_object.SwitchTOChild(HelpPage_object.java:89)
+at loginTestCase.helpPageTestCase.windowoperation(helpPageTestCase.java:31)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- windowoperation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:loginTestCase.helpPageTestCase@1190200a]" started-at="2024-02-19T23:45:30 IST" name="teardown" finished-at="2024-02-19T23:45:30 IST" duration-ms="65" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:loginTestCase.helpPageTestCase@1190200a]" started-at="2024-02-21T23:23:08 IST" name="teardown" finished-at="2024-02-21T23:23:08 IST" duration-ms="61" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
