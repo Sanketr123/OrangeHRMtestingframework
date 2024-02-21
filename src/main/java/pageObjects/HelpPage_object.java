@@ -55,7 +55,15 @@ public class HelpPage_object {
 		
 		//WebElement footerlink= driver.findElement(By.xpath(" "));
 		
-		System.out.println(driver.findElement(By.xpath("//div[@class='article-relatives'] //a"))); //links in footer 10
+		//System.out.println(driver.findElement(By.xpath("//div[@class='article-relatives'] //a"))); //links in footer 10
+
+		WebElement footerlink=driver.findElement(By.xpath("//div[@class='article-relatives'] //a"));
+
+		for(int i=1;i<footerlink;i++){
+		
+			
+
+		}
 		
 		//verifyfooter link
 		
