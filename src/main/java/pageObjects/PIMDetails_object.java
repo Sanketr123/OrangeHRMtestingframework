@@ -53,7 +53,7 @@ public class PIMDetails_object {
 	public void addFile() throws InterruptedException {
 
 		String filepath= System.getProperty("user.dir");
-		addattachment.sendKeys(filepath+"\\Files\\For Selenium.txt");
+		addattachment.sendKeys(filepath+"\\Files\\fileupload.txt");
 		
 
 	}
