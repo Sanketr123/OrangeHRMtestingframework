@@ -99,13 +99,15 @@ public class HelpPage_object {
 				System.out.println( driver.getTitle());
 	
 			}
+			
+			driver.switchTo().window(childid);
 			 
 	        }
 		
 		//verifyfooter link
 		
-		Thread.sleep(6000);
-		driver.switchTo().window(parentid);
+//		Thread.sleep(6000);
+//		driver.switchTo().window(parentid);
 		
 	}
 
