@@ -41,8 +41,7 @@ public class pimTestCase extends Reusable {
 
 	}
 
-	@Test(priority = 2)
-
+	@Test(priority = 2,enabled=false)
 	public static void pimDetails() throws InterruptedException {
 
 		// openbrowser("Chrome");

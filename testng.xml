@@ -32,4 +32,13 @@
     </classes>
   </test> <!-- Test -->
   
+   <test thread-count="5" name="logoutTestCase">   
+    <parameter name="browser" value="Chrome"/>  
+    <classes>
+      <class name="loginTestCase.logoutTestCase"/>
+    </classes>
+  </test> <!-- Test -->
+  
+
+  
 </suite> <!-- Suite -->
