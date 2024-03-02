@@ -46,68 +46,50 @@ public class HelpPage_object {
 
 		Iterator<String> it = windowid.iterator();
 
-		String parentid = it.next();
+		String parentid = it.next(); // admin page
 
-		String childid = it.next();
+		String childid = it.next(); // help page
 
-		driver.switchTo().window(childid);
+		driver.switchTo().window(childid); // switch to help page
 
 		String childTitle = driver.getTitle();
-		System.out.println(childTitle);
+		System.out.println(childTitle); // help page title
 
-		// WebElement footerlink= driver.findElement(By.xpath(" "));
 
-//		WebElement footerlink=(driver.findElement(By.xpath("//div[@class='article-relatives'] //a")));
-//		System.out.println(footerlink);//links in footer 5   //check launchbrowser class
 
-//		WebElement footerlink=driver.findElement(By.xpath("//div[@class='article-relatives'] //a"));
-//
-//		for(int i=1;i<footerlink;i++){
-//		
-//			
-//
-//		}
-//		
-
-//	List <WebElement> footer = (driver.findElements(By.xpath("//div[@class='article-relatives'] //a")));
-//		
-//		int foo=footer.size();
-//		
-//		System.out.println(foo);
-//		
-//		 Iterator<WebElement> iterator = footer.iterator();
-//	        while (iterator.hasNext()) {
-//	            WebElement item = iterator.next();
-//	            
-//	            System.out.println(item.getText());
-//	        }
-
-		List<WebElement> footer = (driver.findElements(By.xpath("//div[@class='article-relatives'] //a")));
+		List<WebElement> footer = (driver.findElements(By.xpath("//div[@class='article-relatives'] //a"))); // 5 footer
+																											// links
 
 		for (WebElement link : footer) {
 
-			link.sendKeys(Keys.CONTROL, Keys.ENTER);
+			link.sendKeys(Keys.CONTROL, Keys.ENTER); // open links in new tab
 
-			Set<String> linkhandel = driver.getWindowHandles();
+			Set<String> linkhandel = driver.getWindowHandles(); // get all ids of opened tab
 
-			Iterator<String> linkhan = linkhandel.iterator();
+			Iterator<String> linkhan = linkhandel.iterator(); // iterate on all ids
 
-			while (linkhan.hasNext()) {
+			while (linkhan.hasNext()) { // will iterate till last link
 
-				driver.switchTo().window(linkhan.next());
+				driver.switchTo().window(linkhan.next()); // driver will switch window for every iteration
 
-				System.out.println(driver.getTitle());
+				System.out.println(driver.getTitle()); // will print title for every new child window
 
-			}
-
+			} 
+			
 			driver.switchTo().window(childid);
 
+	
 		}
+		
+		
+		//driver.close();
 
-		//
-		// verifyfooter link
-		Thread.sleep(4000);
-		driver.switchTo().window(parentid);
+		
+//		if(driver.switchTo().equals(childid)) {
+//			
+//			Thread.sleep(4000);
+//			driver.close();
+//		}
 
 	}
 

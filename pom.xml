@@ -65,6 +65,11 @@
   		<artifactId>Demo_Sel_maven</artifactId>
   		<version>0.0.1-SNAPSHOT</version>
   	</dependency>
+  	<dependency>
+  		<groupId>Pompractice</groupId>
+  		<artifactId>Pompractice</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
   </dependencies>
   
 

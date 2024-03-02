@@ -1,8 +1,13 @@
 package testBase;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.maven.surefire.shared.utils.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -14,8 +19,9 @@ import org.testng.annotations.Parameters;
 import com.beust.jcommander.Parameter;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import reusableComponents.ExtendsReports;
 
-public class Reusable {
+public class Reusable extends ExtendsReports{
 
 	protected static WebDriver driver;
 
@@ -52,7 +58,22 @@ public class Reusable {
 	@Parameters("browser")
 	public void setup(String browser) throws InterruptedException {
 		openbrowser(browser);
+		
+		
+		
 	}
+	
+public String getScreenshot(String testcasename,WebDriver driver) throws IOException {
+		
+		TakesScreenshot ts = (TakesScreenshot)driver;
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		File file = new File(System.getProperty("user.dir")+" "+ testcasename + ".png");
+		FileUtils.copyFile(source, file);
+		return System.getProperty("user.dir")+" "+ testcasename + ".png";
+		
+		
+	}
+
 
 	@AfterTest
 	public void teardown() throws InterruptedException {

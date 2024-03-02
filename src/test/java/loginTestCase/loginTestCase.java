@@ -18,7 +18,7 @@ public class loginTestCase extends Reusable{
 	
 
     
-	@Test()           //priority = 1, groups = "group1"
+	@Test()   //retryAnalyzer=Retry.class       //priority = 1, groups = "group1"
 	public static void login() throws InterruptedException {
 			
 		

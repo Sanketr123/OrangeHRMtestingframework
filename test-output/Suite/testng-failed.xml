@@ -13,4 +13,16 @@
       </class> <!-- loginTestCase.helpPageTestCase -->
     </classes>
   </test> <!-- helpPageTestCase(failed) -->
+  <test thread-count="5" name="logoutTestCase(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="loginTestCase.logoutTestCase">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- loginTestCase.logoutTestCase -->
+    </classes>
+  </test> <!-- logoutTestCase(failed) -->
 </suite> <!-- Failed suite [Suite] -->
