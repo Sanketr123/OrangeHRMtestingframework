@@ -4,30 +4,6 @@
   <listeners>
     <listener class-name="reusableComponents.Listners"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="adminTestCase(failed)">
-    <parameter name="browser" value="Edge"/>
-    <classes>
-      <class name="loginTestCase.adminTestCase">
-        <methods>
-          <include name="setup"/>
-          <include name="teardown"/>
-          <include name="adminPage"/>
-        </methods>
-      </class> <!-- loginTestCase.adminTestCase -->
-    </classes>
-  </test> <!-- adminTestCase(failed) -->
-  <test thread-count="5" parallel="tests" name="helpPageTestCase(failed)">
-    <parameter name="browser" value="Chrome"/>
-    <classes>
-      <class name="loginTestCase.helpPageTestCase">
-        <methods>
-          <include name="windowoperation"/>
-          <include name="setup"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- loginTestCase.helpPageTestCase -->
-    </classes>
-  </test> <!-- helpPageTestCase(failed) -->
   <test thread-count="5" parallel="tests" name="logoutTestCase(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
@@ -40,6 +16,18 @@
       </class> <!-- loginTestCase.logoutTestCase -->
     </classes>
   </test> <!-- logoutTestCase(failed) -->
+  <test thread-count="5" parallel="tests" name="helpPageTestCase(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="loginTestCase.helpPageTestCase">
+        <methods>
+          <include name="windowoperation"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- loginTestCase.helpPageTestCase -->
+    </classes>
+  </test> <!-- helpPageTestCase(failed) -->
   <test thread-count="5" parallel="tests" name="pimTestCase(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
@@ -52,4 +40,16 @@
       </class> <!-- loginTestCase.pimTestCase -->
     </classes>
   </test> <!-- pimTestCase(failed) -->
+  <test thread-count="5" parallel="tests" name="adminTestCase(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="loginTestCase.adminTestCase">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="adminPage"/>
+        </methods>
+      </class> <!-- loginTestCase.adminTestCase -->
+    </classes>
+  </test> <!-- adminTestCase(failed) -->
 </suite> <!-- Failed suite [Suite] -->

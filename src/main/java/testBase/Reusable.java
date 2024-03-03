@@ -1,15 +1,18 @@
 package testBase;
 
+
 import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.maven.surefire.shared.utils.io.FileUtils;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
@@ -38,9 +41,17 @@ public class Reusable {
 	public static void openbrowser(String browser) throws InterruptedException {
 
 		if (browser.equalsIgnoreCase("Chrome")) {
+			
 
 			WebDriverManager.chromedriver().setup();
+			
+			ChromeOptions options = new ChromeOptions();
+			if(browser.contains("headless")) {
+			options.addArguments("headless");
+			}
 			driver = new ChromeDriver();
+			
+			driver.manage().window().setSize(new Dimension(1440,900));
 
 		} else if (browser.equalsIgnoreCase("Edge")) { // same like z.equals from Excel_Data2 just we are ignoring cases
 
