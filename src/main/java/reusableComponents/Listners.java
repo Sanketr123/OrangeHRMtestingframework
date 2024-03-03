@@ -15,7 +15,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import testBase.Reusable;
 
 public class Listners extends Reusable implements ITestListener{
-	
+	 
 	ExtentTest test;
 	
 	ExtentReports exten = ExtendsReports.setupextents();
@@ -31,7 +31,7 @@ public class Listners extends Reusable implements ITestListener{
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		
-		extentTest.get().test.log(Status.PASS, "Test Passed");
+		extentTest.get().log(Status.PASS, "Test Passed");
 	}
 
 	@Override
@@ -42,7 +42,7 @@ public class Listners extends Reusable implements ITestListener{
 		String filePath = null;//will give error exception
 		
 		try {
-			driver = (WebDriver) result.getTestClass().getRealClass().getField("diver").get(result.getInstance());
+			driver = (WebDriver) result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

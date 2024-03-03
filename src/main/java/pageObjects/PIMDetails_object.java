@@ -36,9 +36,8 @@ public class PIMDetails_object {
 	
 	public void selectdate() throws InterruptedException {
 
-		editbutton.sendKeys("J");
-		Thread.sleep(4000);
-		editbutton.click();
+	
+		dob.click();
 		
 
 	}

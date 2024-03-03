@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import testBase.Reusable;
 
@@ -59,8 +61,10 @@ public class PIMPage_object extends Reusable{
 	
 	public void editEmp() {
 
+		wait.until(ExpectedConditions.elementToBeClickable(editbutton)).click();
 		editbutton.click();
 		
+
 
 	}
 	

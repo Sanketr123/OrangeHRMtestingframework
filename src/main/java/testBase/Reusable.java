@@ -15,17 +15,20 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
+import org.testng.asserts.SoftAssert;
 
 import com.beust.jcommander.Parameter;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import reusableComponents.ExtendsReports;
 
-public class Reusable extends ExtendsReports{
+public class Reusable {
 
 	protected static WebDriver driver;
 
 	protected static WebDriverWait wait;
+	
+	protected static SoftAssert softAssert;
 
 	public static void openbrowser(String browser) throws InterruptedException {
 
@@ -43,9 +46,12 @@ public class Reusable extends ExtendsReports{
 
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 
-		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		
 
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		
+		SoftAssert softAssert = new SoftAssert();
 
 	}
 

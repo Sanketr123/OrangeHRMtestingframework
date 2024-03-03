@@ -1,5 +1,6 @@
 package loginTestCase;
 
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Test;
 
 import pageObjects.Loginpage_object;
@@ -26,11 +27,13 @@ public class logoutTestCase extends Reusable{
 		
 		logoutpage.aboutbutton();
 		
-		Thread.sleep(3000);
 		
 		logoutpage.logout();
 	
-		Thread.sleep(3000);
+		wait.until(ExpectedConditions.titleContains("OrangeHRM"));
+		
+		
+		softAssert.assertAll(null);
 
 }
 	

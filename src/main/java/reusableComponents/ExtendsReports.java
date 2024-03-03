@@ -17,7 +17,7 @@ import testBase.Reusable;
 public class ExtendsReports {
 	
 
-	 ExtendsReports extent;
+	 ExtendsReports extend;
 	
 	  
 	
@@ -35,7 +35,7 @@ public class ExtendsReports {
 		
 		ExtentReports extend =new ExtentReports();
 		
-		extend.attachReporter(sparkReporter);
+		extend.attachReporter(sparkReporter); 
 		
 		sparkReporter.config().setTheme(Theme.DARK);
 		
