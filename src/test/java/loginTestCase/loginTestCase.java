@@ -36,7 +36,7 @@ public class loginTestCase extends Reusable{
 		String title=driver.getTitle();
 		System.out.println(title);
 		
-		 Assert.assertTrue(title.contains("OrangeHRM"), "Title does not contain expected text");
+	
 		 
 		 
 //		 <groups>

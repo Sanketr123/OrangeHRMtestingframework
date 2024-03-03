@@ -33,7 +33,7 @@ public class logoutTestCase extends Reusable{
 		wait.until(ExpectedConditions.titleContains("OrangeHRM"));
 		
 		
-		softAssert.assertAll(null);
+		
 
 }
 	

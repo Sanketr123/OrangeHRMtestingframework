@@ -28,7 +28,12 @@ public class Reusable {
 
 	protected static WebDriverWait wait;
 	
-	protected static SoftAssert softAssert;
+		
+	
+	 static {
+	        WebDriverManager.chromedriver().setup();
+	        // Additional setup for other browsers if needed
+	    }
 
 	public static void openbrowser(String browser) throws InterruptedException {
 
@@ -51,7 +56,7 @@ public class Reusable {
 
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
-		SoftAssert softAssert = new SoftAssert();
+		
 
 	}
 
@@ -60,7 +65,7 @@ public class Reusable {
 
 	}
 
-	@BeforeTest
+	@BeforeTest(alwaysRun=true)
 	@Parameters("browser")
 	public void setup(String browser) throws InterruptedException {
 		openbrowser(browser);
@@ -81,7 +86,7 @@ public String getScreenshot(String testcasename,WebDriver driver) throws IOExcep
 	}
 
 
-	@AfterTest
+	@AfterTest(alwaysRun=true)
 	public void teardown() throws InterruptedException {
 		closebrowser();
 	}

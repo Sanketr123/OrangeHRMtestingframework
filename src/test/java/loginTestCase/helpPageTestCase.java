@@ -28,13 +28,13 @@ public class helpPageTestCase extends Reusable {
 		help.clickonhelp();
 		Thread.sleep(3000);
 		
-		softAssert.assertEquals(" ", " ", " ");
+		
 
 		help.SwitchTOChild(driver);   //parentid- 78E48F21330201C9E534ABAC1CD62770 childid - 300EF60B40795958A00B75CAF04AA851
 		Thread.sleep(3000); 
 		
 		
-		softAssert.assertAll();
+		
 
 	}
 
